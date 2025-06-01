@@ -1,0 +1,26 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraCombustivel.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            
+            <Label Text="Marca do Veículo" FontAttributes="Bold"/>
+            <Entry x:Name="marcaEntry" Placeholder="Ex: Toyota" />
+
+            <Label Text="Modelo do Veículo" FontAttributes="Bold"/>
+            <Entry x:Name="modeloEntry" Placeholder="Ex: Corolla" />
+
+            <Label Text="Preço do Etanol (R$)" FontAttributes="Bold"/>
+            <Entry x:Name="etanolEntry" Keyboard="Numeric" Placeholder="Ex: 4.39" />
+
+            <Label Text="Preço da Gasolina (R$)" FontAttributes="Bold"/>
+            <Entry x:Name="gasolinaEntry" Keyboard="Numeric" Placeholder="Ex: 5.99" />
+
+            <Button Text="Qual compensa mais?" Clicked="OnCalcularClicked" />
+
+            <Label x:Name="resultadoLabel" FontSize="16" TextColor="DarkGreen" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
